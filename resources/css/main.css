@@ -1,0 +1,659 @@
+/*
+ =================================
+
+MOBILE DEFAULT LAYOUT -GLOBAL STYLES 
+
+ =================================
+*/
+
+html {
+    -webkit-text-size-adjust:100%;
+    -moz-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+}
+
+ * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Embedded fonts */
+
+@font-face {
+    font-family: 'Lobster Two';
+    src: url('../external/fonts/LobsterTwo-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 
+========================= HOME STYLES ============================
+
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 16px;
+    font-family: 'Lobster Two', serif;
+    font-size: 20px;
+    width: auto;
+}
+
+
+
+#home {
+        transition-delay: 
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        overflow-y: hidden;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/gallery1.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+
+.myVideo {
+    display: none;
+}
+
+.mainLogo {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30vh;
+}
+
+.logo {
+    display: none;
+}
+
+.navC {
+    color: white;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    background-color: #a09277;
+    opacity: 0.9;
+    position: fixed;
+    z-index: 10000;
+}
+
+.menu-items {
+    list-style: none;
+    margin-right: 5vw;
+    padding 0; 
+    
+}
+
+
+nav li a {
+    color: white;
+    display: block;
+    text-align: right;
+    padding: 15px 10px 15px 0px;
+}
+   
+.navBtn {
+    font-size: 2.5em;
+    display: block;
+    cursor: pointer;
+    padding: 7px 3%;
+    text-align: center;
+    margin: 0 4vw 0 75vw;
+    width: 20%;    
+}
+
+.headerC {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+
+
+
+/* ===================================
+
+           ABOUT ME Section
+
+======================================*/
+
+#about {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        overflow-y: hidden;
+    }
+
+.info {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-image: url(../img/wood.jpg);
+    opacity: 1;
+    padding-top: 11vh;
+    text-align: center;
+    font-size: 1.0em;
+ 
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+/* ===================================
+
+           MENU Section
+
+======================================*/
+
+#menu {
+    position: relative;
+    width: 100%;
+    overflow-y: hidden;
+    background-image: url("../img/gallery1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.info2 {
+    width: 100%;
+    color: white;
+    background-color: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    margin: 0;
+    overflow: hidden;
+    font-size: 1.0em;
+}
+
+.menuColumn {
+    width: 100%;
+    float: left;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 35px;
+    padding-right: 35px;
+    justify-content: center;
+}
+
+h5 {
+    display: inline;
+}
+
+
+/* ===================================
+
+           Gallery Section
+
+======================================*/
+
+#gallery {
+    width: 100%;
+    overflow-y: hidden;
+    position: relative;
+    background-image: url(../img/wood.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.images {
+    margin: 20px;
+
+}
+
+ #gallery img {
+    position: relative;
+    width: 270px;
+    height: 190px;
+    border-radius: 5%;
+}
+
+.images img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+
+.images:hover img {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}
+
+/* ===================================
+
+           Contact Section
+
+======================================*/
+
+#contact {
+    position: relative;
+    width: 100%;
+    overflow-y: hidden;
+    background-image: url(../img/contact.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.contactDesign {
+    background-image: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    color: white;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+}
+
+#contact h2 {
+    margin-top: 10vh;
+}
+
+.button1 {
+    color: white;
+    background-color: #a09277;
+    border: none;
+    font-size: 1.1em;
+    width: 180px;
+    text-align: right;
+    cursor: pointer;
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.button2 {
+    color: white;
+    background-color: #a09277;
+    border: none;
+    font-size: 1.1em;
+    width: 120px;
+    text-align: right;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+.contactDesign a {
+    color: inherit;
+}
+
+
+.contactText {
+    font-size: 1.0em;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.fa-phone {
+    margin-right: 12px;
+}
+
+.fa-envelope {
+    margin-right: 10px;
+}
+
+#map {
+    height: 250px;
+    width: 350px;
+    background-color: grey;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.footer {
+    text-align: center;
+    display: inline;
+}
+
+.footer li i {
+    color: white;
+}
+
+
+.copyright {
+    display: inline;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.socialMedia {
+    background-color: #241308;
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    color: grey;
+    font-size: 0.8em;
+}
+
+.social a, .social li {
+    display: inline;
+    padding: 3px;
+    margin: 0;
+}
+
+.social {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+}
+
+
+
+
+
+/* ==========
+MOBILE STYLES - 568PX SCREEN RESOLUTION
+============= */ 
+
+@media screen and (min-width: 568px){ 
+
+    .menu-items {
+       margin-right: 8vw;  
+    }
+    
+    .info {
+        font-size: 1.0em;
+        padding-top: 40px;
+    }
+
+    #gallery {
+        width: 100%;
+    }
+
+    #gallery img {
+        width: 320px;
+        height: 240px;
+    }
+
+    #contact {
+            width: 100%;
+        }
+    
+}
+    
+/* ==========
+TABLET STYLES - 768PX SCREEN RESOLUTION
+============= */ 
+
+@media screen and (min-width: 768px) {
+    
+    
+    .info {
+        font-size: 1.2em;
+        padding-top: 20vh;
+    }
+
+    .info2 {
+        font-size: 1.0em;
+    }
+
+    #gallery {
+        width: 100%;
+    }
+    #contact {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .contactDesign {
+        padding-top: 100px;
+        padding-bottom: 50px;
+        font-size: 1.0em;
+    }
+    
+    #map {
+        width: 350px;
+        height: 250px;
+    }
+}
+
+/* =================
+DESKTOP STYLES - 1024PX SCREEN RESOLUTION
+============= */ 
+    
+@media screen and (min-width: 1024px) {
+        
+    
+
+    .myVideo {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        z-index: -1000; 
+        object-fit: fill;
+    }
+    
+
+    
+    .mainLogo {
+        width: 700px;
+        height: auto;
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 35vh;
+        font-size: 0.5em;
+
+    }
+
+    
+    .navC {
+        position: fixed;
+        text-align: right;
+        border-bottom: none;
+        margin-top: 2vh;
+        margin-right: auto;    
+        margin-left: auto;    
+        width: 100%;    
+        max-width: 100%;    
+        min-width: 1000px;
+        padding-top: 10px;
+        z-index: 1000;
+        height: 55px;
+    }
+
+    .menu-items {
+        display: inline !important;
+        list-style: none;
+        margin: 0;
+        padding: 0; 
+    }
+    
+    ul.menu-items {
+        margin-top: 50px;
+    }
+
+
+    nav li a {
+        color: white;
+        display: inline-block;
+        text-align: right;
+        padding: 0px 0px 0px 0px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 1em;   
+        font-weight: lighter;
+    }
+    
+    nav a:hover {
+        color: #ab9dc4;
+    }
+
+    .navBtn {
+        display: none;
+   
+    }
+
+    .headerC {
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+    }
+    
+    .menu-items {
+        padding-right: 50px;
+    }
+    
+    .menu-items a, .menu-items li {
+        margin: 0 10px;
+        display: inline;
+
+    }
+    
+     .menu-items, .menu-items a {
+        text-align: center;
+        width: 10%;
+
+    }
+    
+    .logo {
+        display: block;
+        position: fixed;
+        margin-left: 30px;
+        float: left;
+        z-index: 100000;
+    }
+    
+    .logo img {
+        width: 135px;
+        height: auto;
+        z-index: 100000;
+    }
+    
+    #about {
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/look.jpg");
+    }
+    
+    
+    .info {
+        width: 50%;
+        padding-top: 12vh;
+        text-align: center;
+        font-size: 1.0em;
+    }
+    
+    .info2 {
+        width: 50%;
+        font-size: 1.0em;
+    }
+
+    .menuColumn {
+    width: 49%;
+    float: left;
+    display: inline-block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+}
+
+    h5 {
+        display: inline;
+    }
+
+    #menu p {
+        font-size: 0.8em;
+    }
+    
+    #gallery {
+        width: 100%;
+    }
+
+    #gallery img {
+        width: 390px;
+        height: 280px;
+    }
+        
+    #contact {
+        width: 100%;
+        height: 110vh;
+    }   
+    
+
+    .contactDesign {
+        width: 70%;
+        height: 110vh;
+        font-size: 1.0em;
+        padding-top: 5vh;
+    }
+    
+    #contact h2 {
+        padding-top: 20px;
+    }
+    
+    .address {
+        display: block;
+    }
+    
+    #map {
+        display: inline-block;
+        height: 200px;
+        width: 350px;
+       
+    }
+
+}   
+
+    /* =================
+LARGE SCREEN STYLES - 1280PX SCREEN RESOLUTION
+============= */ 
+
+@media screen and (min-width:1280px) { 
+
+    .info {
+        font-size: 1.2em;
+    }
+    
+    .info2 {
+        font-size: 1.2em;
+    }
+    
+    .contactDesign {
+        font-size: 1.0em;
+    }
+    
+    #map {
+         padding-bottom: 30px;
+    }
+}
